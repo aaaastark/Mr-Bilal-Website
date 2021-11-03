@@ -11,13 +11,13 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
-import django
+# import django_heroku
+# import django
 
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -130,7 +130,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # STATIC FILES WILL BE SERVED FROM STATIC_CDN WHEN WE ARE LIVE - OUT SIDE OF PROJECT
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),'static')
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 
 #THIS KEEPS THE PROJECT FILES - CSS/JS/IMAGES/FONTS
@@ -139,10 +139,10 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),'static')
 # ]
 
 # MEDIA - UPLOADED FILES/IMAGES
-# MEDIA_URL = '/media/'
+MEDIA_URL = '/media/'
 
 # MEDIA FILES WILL BE SERVED FROM STATIC_CDN WHEN WE ARE LIVE
-# MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),'media')
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 
 
