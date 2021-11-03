@@ -134,15 +134,15 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),'static')
 
 
 #THIS KEEPS THE PROJECT FILES - CSS/JS/IMAGES/FONTS
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR,'static'),
+# ]
 
 # MEDIA - UPLOADED FILES/IMAGES
-MEDIA_URL = '/media/'
+# MEDIA_URL = '/media/'
 
 # MEDIA FILES WILL BE SERVED FROM STATIC_CDN WHEN WE ARE LIVE
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),'media')
+# MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),'media')
 
 
 
